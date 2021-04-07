@@ -1,4 +1,4 @@
-# ShinyR for trucks movements visualizations
+# Shiny apps for trucks movements visualizations
 
 ## Docker Image
 Docker is a software container platform, which allows to isolate OS environments. 
