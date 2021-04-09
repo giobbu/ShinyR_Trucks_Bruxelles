@@ -13,7 +13,7 @@ docker pull giobbu/mobitrucks
 ```
 
 ### 1. Start Container
-From the ```ShinyR_Trucks_Bruxelles ``` folder, start the container with
+Start the container with
 ```
 docker run -p 3838:3838 -it giobbu/mobitrucks bash
 
