@@ -2,7 +2,6 @@ FROM r-base:latest
 
 MAINTAINER Analytics Anonymous
 
-WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
     sudo \
@@ -27,7 +26,7 @@ RUN R -e "install.packages(c('shiny', 'shinydashboard', 'dplyr','shinythemes','l
 
 COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
 
-COPY /app /srv/shiny-server/
+COPY . /srv/shiny-server/
 
 EXPOSE 3838
 
