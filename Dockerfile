@@ -2,6 +2,7 @@ FROM r-base:latest
 
 MAINTAINER Analytics Anonymous
 
+WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
     sudo \
@@ -16,7 +17,6 @@ RUN apt-get update && apt-get install -y \
     libgsl0-dev
 
 # Download and install shiny server
-
 RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt" && \
     VERSION=$(cat version.txt)  && \
     wget --no-verbose "https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/shiny-server-$VERSION-amd64.deb" -O ss-latest.deb && \
