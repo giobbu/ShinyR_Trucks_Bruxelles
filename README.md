@@ -1,6 +1,6 @@
 # Shiny apps for trucks movements visualizations
 
-## MOBIAID DEMO Dashboard
+## MOBIAID Dashboard Demo
 
 <!-- Add a horizontal line before the image -->
 <hr>
